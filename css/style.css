@@ -1,0 +1,340 @@
+/* Fuente */
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color: #03DAC5;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+body {
+  background-color: #121212;
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: #eee;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+.nav-links li a {
+  color: #eee;
+}
+
+/* Header */
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/nvidia-banner.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: #eee;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #03DAC5;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: #03DAC5;
+  border-radius: 30px;
+  color: #eee;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Information */
+section {
+  width: 80%;
+  margin: 80% auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgba(30, 255, 10, 1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  /* background: aquamarine; */
+}
+
+.row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information .row {
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: #3700B3;
+  margin: 20px auto;
+}
+
+p {
+  color: #BB86FC;
+  padding: 0px 40px;
+}
+
+.information .ctn {
+  margin-top: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/nvidia-banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.explore-content h1 {
+  font-size: 7vmin;
+}
+
+.explore-content .line {
+  margin-bottom: 50px;
+}
+
+.explore-content p {
+  color: #eee;
+}
+
+.explore-content .ctn {
+  margin-top: 40px;
+}
+
+/* Galery */
+.content-column {
+  width: 40%;
+}
+
+.image-column {
+  width: 60%;
+}
+
+.innovation .row .column {
+  width: 50%;
+}
+
+.innovation .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.image-gallery img {
+  max-width: 250px;
+  margin: 10px;
+}
+
+.content-column h1{
+  font-size: 7vmin;
+  color: #BB86FC;
+}
+
+.content-column .line {
+  margin-left: -1px;
+}
+
+.content-column p {
+  padding: 0;
+  margin: 30px auto;
+}
+
+.content-column.ctn {
+  margin-left: -100px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #6200EE;
+  text-align: center;
+}
+
+.footer p {
+  color: #EEE;
+  margin: 20px auto;
+  padding: 20px auto;
+}
+
+/* Responsive */
+@media only screen and (max-width:850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #03DAC5;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+  /* Tecnologia */
+  .row {
+    flex-direction: column;
+  }
+
+  .row .column {
+    margin: 20px auto;
+  }
+
+  .column img {
+    max-width: 90%;
+  }
+
+  /* Explore */
+  .explore-content {
+    width: 100%;
+  }
+
+  .innovation .column {
+    width: 100%;
+  }
+
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-gallery img {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Animaciones */
+img {
+  transition: transform .3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.ctn:hover {
+  background: #eee;
+  color: #03DAC5;
+}
+
